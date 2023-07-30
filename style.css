@@ -1,0 +1,591 @@
+/******************************************************************************************************************************************/
+/* Colores */
+/******************************************************************************************************************************************/
+
+:root {
+  --moradoDark: #46467A;
+  --morado: #7766C6;
+  --lila: #E0DFFD;
+  --amarillo: #ffc212;
+  --Rosa: #F9B0C3;
+
+}
+
+
+/******************************************************************************************************************************************/
+/* Barra de navegacion */
+/******************************************************************************************************************************************/
+.navbar {
+  padding: 2rem;
+  background-color: var(--lila);
+}
+
+.navbar-brand {
+  font-family: 'Fira Code', monospace;
+  font-weight: bold;
+  font-size: 25px;
+  color: var(--moradoDark);
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Fira Code', monospace;
+  color: var(--morado);
+
+}
+
+/******************************************************************************************************************************************/
+/* Estilos generales */
+/******************************************************************************************************************************************/
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-family: 'Fira Code', monospace;
+  color: var(--moradoDark);
+  font-weight: bold;
+
+}
+
+h1 span {
+  font-size: 3rem;
+  color: var(--amarillo);
+}
+
+.hero-principal img {
+  height: 350px;
+  width: auto;
+  border-radius: 400px;
+}
+
+.seccion-oscura {
+  color: white;
+  background-color: var(--moradoDark);
+}
+
+.seccion-clara {
+  color: black;
+  background-color: white;
+}
+
+.seccion-titulo {
+  font-size: 2rem;
+  padding: 10px 0;
+  font-family: 'Fira Code', monospace;
+}
+
+.seccion-descripcion {
+  font-size: 1.2rem;
+  color: #584e4e;
+
+}
+
+.seccion-texto {
+  font-size: 1.1rem;
+  font-family: 'Source Code Pro', monospace;
+  letter-spacing: 2px;
+}
+.seccion-texto span {
+  font-size: 1.2rem;
+  font-family: 'Source Code Pro', monospace;
+font-weight: bold;  
+color: var(--Rosa);
+}
+
+.btn-info {
+  font-size: 1.1rem;
+  margin: 20px;
+}
+
+.texto-negro {
+  color: black;
+}
+
+.texto-blanco {
+  color: white;
+}
+
+/******************************************************************************************************************************************/
+/* Seccion Hero */
+/******************************************************************************************************************************************/
+.hero {
+  background-color: #f5f6f7;
+  min-height: 450px;
+  text-align: center;
+}
+
+.hero-principal {
+  padding: 3rem;
+}
+
+.hero-imagen-desarrollador {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+.hero-principal h2 {
+  font-size: 1.5rem;
+  color: var(--morado);
+  font-family: 'Source Code Pro', monospace;
+
+}
+
+/******************************************************************************************************************************************/
+/* Sobre mi */
+/******************************************************************************************************************************************/
+.sobre-mi {
+  height: 500px;
+  padding: 10px;
+}
+
+.sobre-mi .contenedor {
+  max-width: 600px;
+  text-align: center;
+}
+/******************************************************************************************************************************************/
+/* Tecnolgías */
+/******************************************************************************************************************************************/
+.tec-recientes {
+  padding: 40px;
+  
+}
+
+.tec-recientes img {
+  height: 200px;
+  width: 200px;
+  padding: 10px;
+  margin: 0;
+  border-radius: 10px;
+  display: block;
+  transition: all 0.2s ease;
+margin: auto;
+}
+
+.texto-hover {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  transform: translateY(100%);
+  font-family: 'Source Code Pro', monospace;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 3px;
+
+}
+
+.titulo-tec{
+  font-size: 2rem;
+  font-family: 'Fira Code', monospace;
+  color: var(--moradoDark);
+  letter-spacing: 1px;
+}
+.titulo-tec span{
+  font-family: 'Fira Code', monospace;
+  color: var(--amarillo);
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.proyectos-tec {
+  padding-top: 30px;
+  margin-bottom: 20px;
+}
+
+
+.proyecto:hover .ht {
+  transform: translateY(0);
+  color:#FC490B;
+
+}
+
+.proyecto:hover .cs {
+  transform: translateY(0);
+  color:#2196F3;
+
+}
+.proyecto:hover .gt {
+  transform: translateY(0);
+  color: rgb(0, 0, 0);
+
+}
+.proyecto:hover .bt {
+  transform: translateY(0);
+  color: #5E3B7F;
+
+}
+
+
+
+
+
+
+/******************************************************************************************************************************************/
+/* Experiencia */
+/******************************************************************************************************************************************/
+
+.experiencia {
+  padding: 40px 40px 60px 40px;
+  font-family: 'Source Code Pro', monospace;
+
+}
+
+.experiencia .columna {
+  padding: 25px;
+  border: 2px solid var(--lila);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.2s ease-in;
+  color: var(--moradoDark);
+}
+
+.experiencia .columna:hover {
+  color: white;
+  background-color: var(--moradoDark);
+}
+
+.experiencia img {
+  width: auto;
+  height: 150px;
+  background-color: var(--lila);
+  padding: 8px 19px;
+  border-radius: 50%;
+}
+
+.experiencia-titulo {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+
+.badges-contenedor {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+
+}
+
+.badge {
+  margin: 5px;
+}
+
+/******************************************************************************************************************************************/
+/* Proyectos */
+/******************************************************************************************************************************************/
+.proyectos-recientes {
+  padding: 40px;
+
+}
+
+.proyectos-recientes img {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  border-radius: 5px;
+  display: block;
+  transition: all 0.2s ease;
+
+}
+
+.proyectos-contenedor {
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+.sec-p h2{
+  font-size: 2rem;
+  font-family: 'Fira Code', monospace;
+  color: var(--moradoDark);
+  letter-spacing: 1px;
+}
+.sec-p span{
+  font-family: 'Fira Code', monospace;
+  color: var(--amarillo);
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 2.3rem;
+
+}
+.sec-p h3{
+  font-size: 1rem;
+  font-family: 'Fira Code', monospace;
+  color: var(--moradoDark);
+  letter-spacing: 1px;
+}
+
+
+.overlay {
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+  font-family: 'Source Code Pro', monospace;
+  color: var(--moradoDark);
+
+}
+
+.proyecto {
+  position: relative;
+}
+
+.proyecto:hover img {
+  opacity: 0.4;
+}
+
+.proyecto:hover .overlay {
+  opacity: 1;
+}
+
+.overlay .iconos-contenedor {
+  display: flex;
+}
+
+.overlay i {
+  color: var(--moradoDark);
+  font-size: 60px;
+  margin: 10px;
+}
+
+/******************************************************************************************************************************************/
+/* Testimonios */
+/******************************************************************************************************************************************/
+.testimonios {
+  padding: 40px 40px 80px 40px;
+  background-color: var(--lila);
+
+}
+
+.testimonios .carousel {
+  max-width: 800px;
+}
+
+.testimonios h2{
+  font-size: 2rem;
+  font-family: 'Fira Code', monospace;
+  color: var(--moradoDark);
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.testimonios h3{
+  font-size: 1rem;
+  font-family: 'Fira Code', monospace;
+  color: var(--moradoDark);
+  letter-spacing: 1px;
+}
+
+.carousel-item {
+  height: 500px;
+}
+
+.carousel-item .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonio-imagen {
+  height: 150px;
+  width: 150px;
+  margin: 10px 10px 20px 10px;
+}
+
+.testimonio-texto {
+  max-width: 70%;
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Source Code Pro', monospace;
+  color: var(--morado);
+}
+
+.testimonio-info {
+  font-weight: bold;
+  text-align: center;
+  color: var(--moradoDark);
+}
+
+.testimonio-info p {
+  margin-bottom: 0;
+  font-family: 'Source Code Pro', monospace;
+
+}
+
+.testimonio-footer .cliente {
+  font-size: 1.2rem;
+
+}
+
+.testimonio-info .cargo {
+  font-size: 0.9rem;
+  color: #656060;
+}
+
+/******************************************************************************************************************************************/
+/* Contacto */
+/******************************************************************************************************************************************/
+.contacto .container {
+  max-width: 1100px;
+  min-height: 200px;
+  padding: 20px;
+  font-family: 'Source Code Pro', monospace;
+
+}
+
+.contacto .rectangulo {
+  margin-top: -5rem;
+  background-color: var(--amarillo);
+  border-radius: 30px;
+  box-shadow: 0px 1px 10px 1px var(--amarillo);
+}
+
+.contacto .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.contacto .descripcion {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.contacto button {
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 1.25em 2em;
+  margin: 10px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover {
+  background-color: white;
+  color: var(--amarillo);
+}
+
+.contacto button i {
+  color: white;
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover i {
+  color: var(--amarillo);
+
+}
+
+/******************************************************************************************************************************************/
+/* Pie de pagina (footer) */
+/******************************************************************************************************************************************/
+footer {
+  min-height: 300px;
+  font-family: 'Source Code Pro', monospace;
+
+}
+
+.footer-logo {
+  height: 80px;
+  width: 80px;
+  margin: 10px;
+}
+
+.footer-texto {
+  font-size: 1.5rem;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: 'Fira Code', monospace;
+  letter-spacing: 2px;
+}
+
+.iconos-redes-sociales a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i {
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+  background-color: white;
+  border: 2px solid var(--Rosa);
+}
+
+.iconos-redes-sociales a:hover i {
+  color:var(--moradoDark);
+}
+
+.derechos-de-autor {
+  font-size: 15px;
+  color: #aeaeae;
+  padding: 20px;
+}
+
+/******************************************************************************************************************************************/
+/* Adaptable (Responsivo) */
+/******************************************************************************************************************************************/
+@media screen and (max-width: 400px) {
+  .overlay p {
+    font-size: 18px;
+  }
+
+  .overlay i {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .testimonio-imagen {
+    height: 120px;
+    width: 120px;
+  }
+
+  .testimonio-texto {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .hero-inferior-imagen {
+    max-width: 600px;
+  }
+}
